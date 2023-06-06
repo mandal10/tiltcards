@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js" integrity="sha512-RX/OFugt/bkgwRQg4B22KYE79dQhwaPp2IZaA/YyU3GMo/qY7GrXkiG6Dvvwnds6/DefCfwPTgCXnaC6nAgVYw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1{
+            text-align: center;
+        }
+        .box{
+            display: flex;
+            flex-wrap: wrap;
+            width: 1100px;
+            margin: auto;
+            height: 642px;
+            
+        }
+        .container {
+            height: 280px;
+            width: 200px;
+            border: 2px grey solid;
+            border-radius: 8px;
+            margin-left: 60px;
+            margin-top: 60px;
+            box-shadow: 0 14px 28px rgba(0, 0,0,0.25),
+            0 10px 10px rgba(0, 0,0,0.16);
+            background-color: white;
+            /* transform: translateY(-180px); */
+        }
+
+        .container:hover {
+            border-radius: 8px;
+            /* background-color: blue; */
+            /* color: white; */
+            /* box-shadow: 0  3px 6px rgba(0, 0,0,0.16),
+            0 3px 6px rgba(0, 0,0,0.23); */
+            /* box-shadow:  
+            inset 0 0 60px #fff,
+            inset 20px 0 80px #f0f,
+            inset -20px 0 80px #0ff,
+            inset 20px 0 300px #f0f,
+            inset -20px 0 300px #0ff,
+             0 0 50px #fff,
+             -10px 0 80px #f0f,
+             10px 0 80px #0ff; */
+
+          transform:scale(1.1);
+
+           border: none;
+           transition: 0.5s;
+           
+        }
+
+        div i {
+           
+            font-size: 40px;
+            margin-top: 20px;
+            margin-left: 80px;
+
+        }
+
+
+        h4 {
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: 20px;
+
+        }
+
+        p {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .container a {
+            text-align: center;
+            position: relative;
+            background-color:lightgray;
+            top: 30px;
+            left: 55px;
+            color: black;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: none;
+            /* background-color: rgb(222, 220, 220); */
+            box-shadow: 0px 7px 10px rgba(0, 0,0,0.5);
+        }
+       /* img{
+            height: 40px;
+            width: 40px;
+            margin-top: 16px;
+            margin-left: 80px;
+        } */
+
+        /* twitter hover */
+
+        .container.twitter a{
+            background-color:  rgb(29, 155, 240);
+           color: white;
+
+            /* color: white; */
+        }
+        .container.twitter:hover a{
+           color: rgb(29, 155, 240);
+           background-color:white
+        }
+        .container.twitter i{
+            color:rgb(29, 155, 240);
+        }
+        .container.twitter:hover i{
+            color: white;
+        }
+        .container.twitter:hover{
+            background-color: rgb(29, 155, 240);
+            color: white;
+        }
+
+
+        /* facebook hover */
+
+
+        .container.facebook a{
+            background-color: #1a0dab;
+           color: white;
+
+            /* color: white; */
+        }
+        .container.facebook:hover a{
+           color: #1a0dab;
+           background-color:white
+        }
+        .container.facebook i{
+            color:#1a0dab;
+        }
+        .container.facebook:hover i{
+            color: white;
+        }
+        .container.facebook:hover{
+            background-color: #1a0dab;
+            color: white;
+        }
+
+        /* instagram */
+
+        .container.instagram a{
+           background-color: purple;
+           color: white;
+
+
+        }
+        .container.instagram:hover a{
+           color: purple;
+           background-color:white
+        }
+        .container.instagram i{
+            color:purple;
+            /* background-image: linear-gradient(blue, pink, yellow); */
+        }
+        .container.instagram:hover i{
+            color: white;
+        }
+        .container.instagram:hover{
+            background-color:purple;
+            color: white;
+        }
+
+           /* linkedin */
+
+        .container.linkedin a{
+           background-color: rgb(88, 88, 240);
+           color: white;
+
+
+        }
+        .container.linkedin:hover a{
+           color: rgb(88, 88, 240);
+           background-color:white
+        }
+        .container.linkedin i{
+            color:rgb(88, 88, 240);
+            /* background-image: linear-gradient(blue, pink, yellow); */
+        }
+        .container.linkedin:hover i{
+            color: white;
+        }
+        .container.linkedin:hover{
+            background-color:rgb(88, 88, 240);
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>OUR SERVICES</h1>
+    <div class="box">
+        <div class="container twitter" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="500">
+            <i class="fa-brands fa-twitter " id="icon"></i>
+            <!-- <img src="twitter.avif" alt=""> -->
+            <h4>twitter</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium sequi qui dolorem dignissimos a,
+                sint quo minima </p>
+            <a href="https://twitter.com/home" >Read More</a>
+            
+        </div>
+
+
+        <div class="container facebook" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="500">
+            <i class="fa-brands fa-facebook " ></i>
+            <!-- <img src="Facebook_icon.svg.png" alt=""> -->
+            <h4>facebook</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium sequi qui dolorem dignissimos a,
+                sint quo minima </p>
+                <a href="https://www.facebook.com/" >Read More</a>
+        </div>
+
+
+        <div class="container instagram" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="500">
+            <i class="fa-brands fa-instagram "></i>
+            <!-- <img src="Instagram_icon.png.webp" alt=""> -->
+            <h4>instagram</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium sequi qui dolorem dignissimos a,
+                sint quo minima </p>
+                <a href="https://www.instagram.com/" >Read More</a>
+        </div>
+
+        <div class="container linkedin" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="500">
+            <i class="fa-brands fa-linkedin "></i>
+            <!-- <img src="LinkedIn_icon_circle.svg.png" alt=""> -->
+            <h4>linkedin</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium sequi qui dolorem dignissimos a,
+                sint quo minima </p>
+                <a href="https://www.linkedin.com/feed/" >Read More</a>
+        </div>
+
+        <div class="container" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="500">
+            <i class="fa-brands fa-tiktok "></i>
+            <!-- <img src="Tiktok-512.webp" alt=""> -->
+            <h4>tiktok</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium sequi qui dolorem dignissimos a,
+                sint quo minima </p>
+                <a href="https://www.tiktok.com/en/" >Read More</a>
+        </div>
+
+        <div class="container" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="500">
+            <i class="fa-brands fa-github "></i>
+            <h4>githup</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium sequi qui dolorem dignissimos a,
+                sint quo minima </p>
+                <a href="https://github.com/" >Read More</a>
+        </div>
+
+        <div class="container" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="500">
+            <i class="fa-brands fa-youtube "></i>
+            <!-- <img src="youtube.png" alt=""> -->
+            <h4>youtube</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium sequi qui dolorem dignissimos a,
+                sint quo minima </p>
+                <a href="https://www.youtube.com/" >Read More</a>
+        </div>
+
+        <div class="container" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="500">
+            <i class="fa-brands fa-python "></i>
+            <!-- <img src="Python-512.webp" alt=""> -->
+            <h4>python</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium sequi qui dolorem dignissimos a,
+                sint quo minima </p>
+                <a href="https://www.python.org/" >Read More</a>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".container "), {
+		max: 25,
+		speed: 400
+	});
+	
+	//It also supports NodeList
+	VanillaTilt.init(document.querySelectorAll(".container"));
+</script>
+</body>
+
+</html>
